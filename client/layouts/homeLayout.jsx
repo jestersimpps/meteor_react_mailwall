@@ -4,7 +4,7 @@ import {NavBar} from '../components/navbar/navbar.jsx';
 export const HomeLayout = ({content}) => (
   <div>
     <NavBar/>
-    <div className="homePage">
+    <div className="navpage">
       {content}
     </div>
   </div>

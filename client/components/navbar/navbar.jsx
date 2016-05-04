@@ -3,81 +3,80 @@ import React from 'react';
 export class NavBar extends React.Component {
   render() {
     return (
-      <nav class="navbar navbar-fixed-top black z-depth-1">
-        <div class="container-fluid">
-          <div class="navbar-header">
+      <nav className="navbar navbar-fixed-top black z-depth-1">
+        <div className="container-fluid">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar white"></span>
-              <span class="icon-bar white"></span>
-              <span class="icon-bar white"></span>
+            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+              <span className="sr-only">Toggle navigation</span>
+              <span className="icon-bar white"></span>
+              <span className="icon-bar white"></span>
+              <span className="icon-bar white"></span>
             </button>
 
-            <div class="navbar-brand">
+            <div className="navbar-brand">
               <a href="/">
                 <img src="/img/mwmwsmall.png" width="85"/>
               </a>
             </div>
 
-            <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <div className="collapse navbar-collapse" id="bs-navbar-collapse-1">
 
-              <ul class="nav navbar-nav navbar-right">
+              <ul className="nav navbar-nav navbar-right">
                 <li>
-                  <a class="white-text">Register</a>
+                  <a className="white-text" href="/register">Register</a>
                 </li>
                 <li>
-                  <a class="white-text">Login</a>
+                  <a className="white-text" href="/login">Login</a>
                 </li>
               </ul>
 
-              <ul class="nav navbar-nav">
-                <li class="">
+              <ul className="nav navbar-nav">
+                <li className="">
                   <a href="/">
-                    <i class="fa fa-users"></i>
+                    <i className="fa fa-users"></i>
                     Public
-                    <span class="sr-only">(current)</span>
+                    <span className="sr-only">(current)</span>
                   </a>
                 </li>
-                <li class="active">
+                <li className="active">
                   <a href="">
-                    <i class="fa fa-lock"></i>
+                    <i className="fa fa-lock"></i>
                     Private
                   </a>
                 </li>
               </ul>
 
-              <ul class="nav navbar-nav navbar-right">
+              <ul className="nav navbar-nav navbar-right">
                 <li>
                   <a href="mailto:@mailwall.me">
-                    <i class="fa fa-user"></i>
+                    <i className="fa fa-user"></i>
                     <font color="white">
                       @mailwall.me</font>
                   </a>
                 </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                    <i class="fa fa-cog"></i>
+                <li className="dropdown">
+                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                    <i className="fa fa-cog"></i>
                     Settings
-                    <span class="caret"></span>
+                    <span className="caret"></span>
                   </a>
-                  <ul class="dropdown-menu" role="menu">
+                  <ul className="dropdown-menu" role="menu">
                     <li>
                       <a href="#">
-                        <i class="fa fa-cogs"></i>
+                        <i className="fa fa-cogs"></i>
                         Account settings</a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-envelope-o"></i>
+                        <i className="fa fa-envelope-o"></i>
                         Mail authorisation</a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-users"></i>
+                        <i className="fa fa-users"></i>
                         Mail groups</a>
                     </li>
-                    <li class="divider"></li>
+                    <li className="divider"></li>
                     <li>
                       <a href="">Logout</a>
                     </li>
@@ -85,14 +84,13 @@ export class NavBar extends React.Component {
                 </li>
               </ul>
 
-              <ul class="nav navbar-nav navbar-right">
+              <ul className="nav navbar-nav navbar-right">
                 <li>
-                  <a class="white-text">Profile</a>
+                  <a className="white-text" href="" >Profile</a>
                 </li>
               </ul>
 
             </div>
-          </div>
         </div>
       </nav>
     )
