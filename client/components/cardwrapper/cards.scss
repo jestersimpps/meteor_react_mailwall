@@ -1,5 +1,5 @@
 .brick {
-  
+
   border-radius: 3px;
   -moz-animation-name: pop;
   -moz-animation-iteration-count: 1;
@@ -13,7 +13,7 @@
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-duration: 1.5s;
-  min-width: 300px !important;
+ width: 300px !important;
 }
 .brick .img {
   width: 100%;
@@ -164,9 +164,9 @@
 }
 .youtube {
   width: 100%;
-  height: 250px;
+  height: 200px;
 }
 iframe{
   width:100%;
-  height: 250px;
+  height: 200px;
 }

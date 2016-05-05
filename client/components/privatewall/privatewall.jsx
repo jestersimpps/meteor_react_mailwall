@@ -32,10 +32,10 @@ export class PrivateWall extends TrackerReact(React.Component) {
     console.log(this.posts())
     const Grid = makeResponsive(measureItems(SpringGrid), {
       maxWidth: 1920,
-      minPadding: 10
+      minPadding: 0
     });
     return (
-      <Grid component="span" className="grid" layout={layout.pinterest} columns={8} columnWidth={300} gutterWidth={15} gutterHeight={15} springConfig={{ stiffness: 170, damping: 26 }}>
+      <Grid component="div" className="grid" layout={layout.pinterest} columns={8} columnWidth={300} gutterWidth={15} gutterHeight={15} springConfig={{ stiffness: 170, damping: 26 }}>
         {this.posts().map((post) => {
           return (
             <div className="brick white z-depth-1 hoverable" key={post._id}>
