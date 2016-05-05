@@ -1,0 +1,172 @@
+.brick {
+  margin-bottom: 35px;
+  border-radius: 3px;
+  -moz-animation-name: pop;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-name: pop;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 1.5s;
+  animation-name: pop;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s;
+  min-width: 300px !important;
+}
+.brick .img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+.brick h3,
+.brick h5 {
+  text-shadow: none;
+}
+@-moz-keyframes pop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes pop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes pop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.commentbox {
+  margin-bottom: 2px;
+  max-width: 100%;
+}
+.typeindicator {
+  width: 100%;
+  border-radius: 2px 2px 0 0;
+  padding: 5px;
+}
+.brickfooter {
+  width: 100%;
+  border-radius: 0 0 2px 2px;
+  padding: 5px;
+}
+.popover {
+  border: 2px solid RGBA(34, 34, 34, 1);
+}
+.commentsbutton {
+  cursor: pointer;
+  border-radius: 20px;
+  border: 0;
+}
+.commentsbutton:hover {
+
+}
+.date {
+  font-size: 0.8em;
+  left: 5px;
+  top: 5px;
+}
+.from_mail {
+  font-size: 0.8em;
+  left: 5px;
+  top: 5px;
+}
+.brick img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+.brickheader {
+  padding: 5px;
+  width: 100%;
+}
+.downvotes {
+  border-radius: 20px;
+  border: 0;
+}
+.downvotes:hover {
+}
+.upvotes {
+  border-radius: 20px;
+  border: 0;
+}
+.upvotes:hover {
+}
+.lock {
+  border-radius: 20px;
+  border: 0;
+}
+.lock:hover {
+}
+.sharepost {
+  border-radius: 20px;
+  border: 0;
+}
+.sharepost:hover {
+}
+.removepost {
+  border-radius: 20px;
+  border: 0;
+}
+.removepost:hover {
+}
+.comments {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+}
+.carousel-inner > .item > img {
+  height: 285px;
+  width: auto;
+  margin: auto;
+}
+
+// for individual card htmls
+.topinfo {
+  padding: 0 15px 0 15px;
+  font-weight: bold;
+}
+.body {
+  padding: 3px 15px 5px;
+  font-style: italic;
+  font-size: .9em;
+  a{
+      color:#2196F3;
+      word-break: break-all;
+  }
+}
+.description{
+    padding: 3px 15px 5px;
+  font-style: italic;
+
+  font-size: .9em;
+}
+.subject {
+  padding: 5px 15px;
+  font-size: 1.3em;
+}
+.youtube {
+  width: 100%;
+  height: 250px;
+}
+iframe{
+  width:100%;
+  height: 250px;
+}

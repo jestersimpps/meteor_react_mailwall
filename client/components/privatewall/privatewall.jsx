@@ -30,19 +30,16 @@ export class PrivateWall extends TrackerReact(React.Component) {
 
     console.log(this.posts())
 
-
     return (
       <div>
         {this.posts().map((post) => {
           return (
-            <div class="brick white z-depth-1" key={post._id}>
+            <div className="brick white z-depth-1" key={post._id}>
               <CardWrapper post={post}/>
             </div>
           )
         })}
-
       </div>
-
     )
   }
 }

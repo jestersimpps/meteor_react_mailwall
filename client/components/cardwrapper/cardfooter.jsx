@@ -9,7 +9,7 @@ export class CardFooter extends React.Component {
   render() {
 
     return (
-      <div className="brickfooter" className={this.props.postColor}>
+      <div className={'brickfooter '+this.props.postColor}>
         <button className="downvotes white red-text" onClick={this.clickDownVote.bind(this)}>
           {this.props.post.downvotes}
           <i className="fa fa-thumbs-down"></i>

@@ -23,7 +23,7 @@ export class CardHeader extends React.Component {
         <div className="typeindicator black white-text">
           <span className="from_mail">
             <i className="fa fa-user"></i>
-            <a className="white-text" href={this.props.post.url}>
+            <a className="white-text" href={'mailto:'+this.props.post.from}>
               {this.props.post.from}</a>
           </span>
           <span className="date pull-right">
@@ -32,8 +32,8 @@ export class CardHeader extends React.Component {
           </span>
         </div>
 
-        <div className="brickheader" className={this.props.postColor}>
-          <button className=" white black-text" onClick={this.clickLock.bind(this)}>
+        <div className={'brickheader '+this.props.postColor}>
+          <button className="lock white black-text" onClick={this.clickLock.bind(this)}>
             {lockIcon}
           </button>
 
