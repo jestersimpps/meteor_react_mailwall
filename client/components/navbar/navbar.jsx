@@ -32,14 +32,14 @@ export class NavBar extends React.Component {
 
               <ul className="nav navbar-nav">
                 <li className="">
-                  <a href="/">
+                  <a href="/public">
                     <i className="fa fa-users"></i>
                     Public
                     <span className="sr-only">(current)</span>
                   </a>
                 </li>
                 <li className="active">
-                  <a href="">
+                  <a href="/private">
                     <i className="fa fa-lock"></i>
                     Private
                   </a>

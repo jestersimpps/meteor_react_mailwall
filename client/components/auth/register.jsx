@@ -1,10 +1,23 @@
 import React from 'react';
 
 export class Register extends React.Component {
+
+  submitRegistrationFrom(event) {
+    event.preventDefault();
+    var activation_token = this.refs.activation_token.value;
+    var username = this.refs.username.value;
+    var password = this.refs.password.value;
+
+  }
+
+  verifyUserName() {
+    var username = this.refs.username.value;
+  }
+
   render() {
     return (
       <div className="form-box">
-        <form>
+        <form onSubmit={this.submitRegistrationFrom.bind(this)}>
           <div className="header dev">
             <center>
               <a href="/">
@@ -13,19 +26,19 @@ export class Register extends React.Component {
             </center>
           </div>
           <div className="body">
-            <ul >
+            {/*<ul >
               <li className="red-text">error</li>
-            </ul>
+            </ul>*/}
 
             <div className="form-group">
               <label>Activation token:
               </label>
-              <input type="text" className="form-control" ngControl="token" value="" placeholder="Activation token"/>
+              <input type="text" className="form-control" ref="activation_token" placeholder="Activation token"/>
             </div>
 
             <label>Desired mailwall.me address:</label>
             <div className="input-group">
-              <input type="text" className="form-control" placeholder="Username"/>
+              <input type="text" className="form-control" ref="username" placeholder="Username"/>
               <span className="input-group-addon" id="basic-addon2">@mailwall.me</span>
               <span className="input-group-btn">
                 <button className="btn btn-default" type="button">Verify</button>
@@ -34,7 +47,7 @@ export class Register extends React.Component {
 
             <div className="form-group">
               <label>Password:</label>
-              <input type="password" className="form-control" placeholder="Password"/>
+              <input type="password" className="form-control" ref="password" placeholder="Password"/>
             </div>
 
           </div>

@@ -1,7 +1,5 @@
 import React from 'react';
 
-Posts = new Mongo.Collection('posts');
-
 export class Home extends React.Component {
   render() {
     return (
