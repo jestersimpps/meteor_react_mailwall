@@ -1,17 +1,21 @@
 import React from 'react';
 import {CardHeader} from './cardheader.jsx';
 import {CardFooter} from './cardfooter.jsx';
-// import {CardWrapper} from '../cardwrapper/cardwrapper.jsx';
-
+import {ArticleCard} from './card_types/articlecard.jsx';
+import {YoutubeCard} from './card_types/youtubecard.jsx';
+import {ImageCard} from './card_types/imagecard.jsx';
 
 export class CardWrapper extends React.Component {
 
   render() {
-    // postcolor
+
     let postColor = "blue darken-2";
+    let card = <ArticleCard post={this.props.post}/>;
+
     switch (this.props.post.site_name) {
       case "YouTube":
         postColor = "red darken-3";
+        card = <YoutubeCard post={this.props.post}/>;
         break;
       case "img":
         postColor = "green darken-1";
@@ -20,8 +24,9 @@ export class CardWrapper extends React.Component {
 
     return (
       <div>
-        <CardHeader postColor={postColor} post={this.props.post} />
-        <CardFooter postColor={postColor} post={this.props.post} />
+        <CardHeader postColor={postColor} post={this.props.post}/>
+        {card}
+        <CardFooter postColor={postColor} post={this.props.post}/>
       </div>
     )
   }

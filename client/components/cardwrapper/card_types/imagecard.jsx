@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class ArticleCard extends React.Component {
+export class ImageCard extends React.Component {
   render() {
     return (
       <div>
