@@ -4,6 +4,12 @@ body {
   position: relative;
   font-family: 'Lato', Helvetica, Arial, Tahoma;
   -webkit-overflow-scrolling: touch;
+  // background: #E55D87;
+  // /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to left, #E55D87 , #5FC3E4);
+  // /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to left, #E55D87 , #5FC3E4);
+  // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 ol,
 ul {
