@@ -34,6 +34,7 @@ export class PrivateWall extends TrackerReact(React.Component) {
       maxWidth: 1920,
       minPadding: 0
     });
+
     return (
       <Grid component="div" className="grid" layout={layout.pinterest} columns={8} columnWidth={300} gutterWidth={15} gutterHeight={15} springConfig={{ stiffness: 170, damping: 26 }}>
         {this.posts().map((post) => {

@@ -24,11 +24,11 @@ export class CardHeader extends React.Component {
           <span className="from_mail">
             <i className="fa fa-user"></i>
             <a className="white-text" href={'mailto:'+this.props.post.from}>
-              {this.props.post.from}</a>
+              {' '}{this.props.post.from}</a>
           </span>
           <span className="date pull-right">
             <i className="fa fa-clock-o"></i>
-            {this.props.post.created_at}
+            {' '}{this.props.post.created_at}
           </span>
         </div>
 

@@ -1,6 +1,5 @@
 .brick {
-
-  border-radius: 3px;
+  border-radius: 5px;
   -moz-animation-name: pop;
   -moz-animation-iteration-count: 1;
   -moz-animation-timing-function: ease-in-out;
@@ -13,7 +12,7 @@
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-duration: 1.5s;
- width: 300px !important;
+  width: 300px !important;
 }
 .brick .img {
   width: 100%;
@@ -54,12 +53,12 @@
 }
 .typeindicator {
   width: 100%;
-  border-radius: 2px 2px 0 0;
-  padding: 5px;
+  border-radius: 5px 5px 0 0;
+  padding: 7px;
 }
 .brickfooter {
   width: 100%;
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 5px 5px;
   padding: 5px;
 }
 .popover {
@@ -67,12 +66,10 @@
 }
 .commentsbutton {
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 5px;
   border: 0;
 }
-.commentsbutton:hover {
-
-}
+.commentsbutton:hover {}
 .date {
   font-size: 0.8em;
   left: 5px;
@@ -94,35 +91,35 @@
   width: 100%;
 }
 .downvotes {
-  border-radius: 20px;
+  border-radius: 5px;
   border: 0;
+  margin:1px;
 }
-.downvotes:hover {
-}
+.downvotes:hover {}
 .upvotes {
-  border-radius: 20px;
+  border-radius: 5px;
   border: 0;
+  margin:1px;
 }
-.upvotes:hover {
-}
+.upvotes:hover {}
 .lock {
-  border-radius: 20px;
+  border-radius: 5px;
   border: 0;
+  margin:1px;
 }
-.lock:hover {
-}
+.lock:hover {}
 .sharepost {
-  border-radius: 20px;
+  border-radius: 5px;
   border: 0;
+  margin:1px;
 }
-.sharepost:hover {
-}
+.sharepost:hover {}
 .removepost {
-  border-radius: 20px;
+  border-radius: 5px;
   border: 0;
+  margin:1px;
 }
-.removepost:hover {
-}
+.removepost:hover {}
 .comments {
   position: relative;
   padding-left: 15px;
@@ -131,32 +128,31 @@
   left: 0;
   width: 100%;
   height: 30px;
+  margin:1px;
 }
 .carousel-inner > .item > img {
   height: 285px;
   width: auto;
   margin: auto;
 }
-
 // for individual card htmls
 .topinfo {
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
   font-weight: bold;
 }
 .body {
   padding: 3px 15px 5px;
   font-style: italic;
-  font-size: .9em;
-  a{
-      color:#2196F3;
-      word-break: break-all;
+  font-size: 0.9em;
+  a {
+    color: #2196F3;
+    word-break: break-all;
   }
 }
-.description{
-    padding: 3px 15px 5px;
+.description {
+  padding: 3px 15px 5px;
   font-style: italic;
-
-  font-size: .9em;
+  font-size: 0.9em;
 }
 .subject {
   padding: 5px 15px;
@@ -166,7 +162,7 @@
   width: 100%;
   height: 200px;
 }
-iframe{
-  width:100%;
+iframe {
+  width: 100%;
   height: 200px;
 }
